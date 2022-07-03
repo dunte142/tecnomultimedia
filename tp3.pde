@@ -51,7 +51,7 @@ void draw() {
   if (pantalla == 2) {
     mov+=5;
     background(0, 0, 200);
-    image(personajes[cant], mov, posY, 100, 100);
+    image(personajes[cant], mov, posY, 80, 80);
   }
   if(mov >=510){
   mov+=-mov;
