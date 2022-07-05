@@ -1,16 +1,11 @@
 PImage [] personajes  = new PImage[7];
 PImage arbol1, pasto1, nube1;
-float x, y, w, h;
 PFont font;
 int pantalla, cant, mov = 0;
 int posX, posY;
 void setup() {
   size(500, 500);
   background(255);
-  x = 200;
-  y = 300;
-  w = 100;
-  h = 50;
   posY =10;
   personajes [0] = loadImage("P1.png");
   personajes [1] = loadImage("P12.jpg");
@@ -29,16 +24,14 @@ void setup() {
 void draw() {
 
   //Pantalla de inicio
- background(0, 153, 153);
-  fill(255);
-  rect(x, y, w, h);
-  fill(0);
-  textSize(20);
-  text("Play", 215, 335);
+ background(0, 153, 153);  
   fill(0);
   textSize(50);
   text("HUNTING\n   DAY", 100, 100);
   image(pasto1, -30, 430, 600, 100); 
+  textSize(10);
+  fill(255, 0, 0);
+  text("Presiona 'ENTER' para empezar", 130, 350);
 
 
   //Pantalla de instrucciones
@@ -64,7 +57,8 @@ void draw() {
     image(personajes[cant], mov, posY, 80, 80);
     image(personajes[cant], mov, posY, 100, 100);
     image(pasto1, -30, 430, 600, 100);
-    image(arbol1, 0, 220, 300, 250);
+    image(arbol1, 0, 270, 250, 200);
+    image(casa, 410, 360, 100, 100);
   }
   if(mov >=510){
   mov+=-mov;
@@ -74,9 +68,11 @@ void draw() {
   }
 
 
-  if (mousePressed) {
-    if (mouseX>x && mouseX <x+w && mouseY>y && mouseY <y+h) {
-      pantalla = 1;
-    }
+}
+
+
+void keyPressed() {
+  if (key == ENTER) {
+    pantalla = 1;
   }
 }
