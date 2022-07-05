@@ -1,5 +1,5 @@
 PImage [] personajes  = new PImage[7];
-PImage arbol1, pasto1, nube1;
+PImage arbol1, pasto1, nube1,casa;
 PFont font;
 int pantalla, cant, mov = 0;
 int posX, posY;
