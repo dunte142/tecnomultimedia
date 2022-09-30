@@ -1,6 +1,7 @@
 // Informe: 
 //https://docs.google.com/document/d/1Ja8oeWGSwAYQCwH9X8PivD0k3w1SFs1YpzppBgFVJ0M/edit?usp=sharing
-
+//Video explicando el codigo IMPORTANTE : Al principio del video no se entiende porque se me rompio el microfono asi que opte por ponerle subtitulos
+//https://youtu.be/SZc1XAwJuvw
 
 Boton b1, b2, b3, b4;
 
