@@ -1,3 +1,7 @@
+// Informe: 
+//https://docs.google.com/document/d/1Ja8oeWGSwAYQCwH9X8PivD0k3w1SFs1YpzppBgFVJ0M/edit?usp=sharing
+
+
 Boton b1, b2, b3, b4;
 
 Carta Dante, Ramiro, Camila;
